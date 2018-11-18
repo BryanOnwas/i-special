@@ -1,5 +1,7 @@
 # Redirect domain aliases to primary domain
 http://ispecialfoundation.org/* http://ispecialwears.com/:splat 301!
+https://ispecialfoundation.org/* https://ispecialwears.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 http://mystifying-swirles-c2b153.netlify.com/* http://ispecialwears.com/:splat 301!
+https://mystifying-swirles-c2b153.netlify.com/* https://ispecialwears.com/:splat 301!
