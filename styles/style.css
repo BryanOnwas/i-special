@@ -41,20 +41,21 @@ ul > li {
   display: inline-block;
 }
 
-li:hover {
-  color: pink;
-}
-
 li > a {
   display: block;
   font-size: 1rem;
   padding: 0 1rem;
-  line-height: 3;
+  line-height: 2;
   color: white;
+}
+
+li > a:hover {
+  color: pink;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Header-exclusive Selectors */
@@ -70,12 +71,29 @@ header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.top__light {
+  background-color: white;
+}
+
 .top__dark {
   background-color: black;
 }
 
 .top--logo {
   font-size: 2rem;
+}
+
+.top--login a {
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.top--login a:last-child {
+  padding: 0;
+}
+
+.top--login a:hover {
+  text-decoration: underline;
 }
 
 .top--menu {
