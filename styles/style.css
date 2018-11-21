@@ -61,24 +61,31 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
-.top {
+.top__light {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.top__light {
   background-color: white;
 }
 
 .top__dark {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
 }
 
 .top--logo {
   font-size: 2rem;
+}
+
+.top--search {
+}
+
+.top--login {
 }
 
 .top--login a {
@@ -103,8 +110,55 @@ header {
   background-image: url('../images/test.jpg');
   background-position: center;
   background-size: cover;
-  position: absolute;
-  z-index: -1;
   height: 100vh;
   width: 100vw;
+}
+
+/* Sidebar exclusive Selectors */
+.sidebar {
+  position: fixed;
+  left: -300px;
+  bottom: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 300px;
+  background-color: #333;
+  transition: left 250ms ease-in-out;
+}
+
+.sidebar__isOpen {
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 300px;
+  background-color: #333;
+  transition: left 250ms ease-in-out;
+}
+
+.sidebar--title {
+  display: flex;
+  height: 68px;
+  background-color: #222;
+}
+
+.sidebar--title p {
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+footer {
+  height: 300px;
+  width: 100vw;
+  background-color: black;
+  text-align: right;
+}
+
+footer p{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
 }
