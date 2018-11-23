@@ -86,6 +86,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
 }
 
 .top__light {
@@ -99,29 +100,38 @@ header {
 
 .top--logo {
   font-size: 2rem;
-  flex: 1;
+  flex-basis: 240px;
 }
 
 .top--search {
-  flex: 2;
+  flex-basis: 440px;
 }
 
 .top--search input {
-  font-size: 1rem;
-  width: 70%;
+  font-size: 1.1rem;
+  width: 400px;
   outline: none;
-  border: 1px solid black;
+  border: 2px solid gray;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: justify;
+  margin-right: -3px;
 }
 
 .top--search button {
-  font-size: 1rem;
-  width: 80px;
+  font-size: 1.1rem;
+  padding: 0.5rem;
   outline: none;
-  border: 1px solid black;
+  border: 2px solid gray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -3px;
 }
 
 .top--login {
-  flex: 1;
+  flex-basis: 240px;
 }
 
 .top--login a {
@@ -153,7 +163,7 @@ header {
 /* Sidebar exclusive Selectors */
 .sidebar {
   position: fixed;
-  top: 90px;
+  top: 66px;
   left: -300px;
   bottom: 0;
   z-index: 20;
@@ -166,7 +176,7 @@ header {
 
 .sidebar__open {
   position: fixed;
-  left: 0px;
+  left: 0;
   bottom: 0;
   z-index: 20;
   height: 100vh;
@@ -189,18 +199,18 @@ header {
 }
 
 footer {
-  height: 300px;
+  height: 200px;
   background-color: black;
   text-align: right;
 }
 
 footer p {
-  font-size: 5rem;
+  font-size: 1.25rem;
   color: white;
   text-align: center;
 }
 
-.test{
+.test {
   position: fixed;
   bottom: 0;
   right: 0;
