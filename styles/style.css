@@ -82,6 +82,7 @@ header {
   left: 0;
   right: 0;
   z-index: 10;
+  opacity: 0.9;
 }
 
 .top {
@@ -90,6 +91,8 @@ header {
   text-align: center;
   justify-content: space-between;
   height: 66px;
+
+  transition: opacity 0.25s ease;
 }
 
 .top__light {
@@ -97,7 +100,7 @@ header {
 }
 
 .top__dark {
-  background-color: black;
+  background-color: #333;
   justify-content: flex-end;
 }
 
@@ -173,7 +176,7 @@ header {
 
 /* Main content exclusive Selectors */
 .content--showcase {
-  background-image: url('../images/test.jpg');
+  background-image: url('../images/test2.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -235,6 +238,7 @@ footer p {
   right: 0;
   z-index: 20;
   background-color: #222;
+  transition: right 0.25s ease;
 }
 
 .test a {

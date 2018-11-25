@@ -3,3 +3,4 @@ var hamburger = document.querySelector('.hamburger');
 var modal = document.querySelector('.container');
 var bar = document.querySelector('body');
 var test = document.querySelector('.test');
+var head = document.querySelector('header');
