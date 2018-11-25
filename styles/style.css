@@ -1,12 +1,14 @@
 /* Global Selectors */
 *,
 *::before,
-*::after {
+*::after,
+*:active {
   margin: 0;
   padding: 0;
   user-select: none;
   box-sizing: border-box;
   backface-visibility: hidden;
+  outline: none;
 }
 
 .container {
@@ -100,11 +102,14 @@ header {
 
 .top--logo {
   font-size: 2rem;
-  flex-basis: 240px;
+  flex-basis: 300px;
+  border-right: 1px solid;
+  background-color: #ddd;
 }
 
 .top--search {
-  flex-basis: 440px;
+  flex-basis: auto;
+  background-color: #ddd;
 }
 
 .top--search input {
@@ -128,10 +133,20 @@ header {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-left: -3px;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.top--search button:hover {
+  background-color: #bbb;
 }
 
 .top--login {
   flex-basis: 240px;
+  background-color: #ddd;
+}
+.top--login a {
+  display: inline-block;
 }
 
 .top--login a {
@@ -185,15 +200,14 @@ header {
   transition: left 250ms ease;
 }
 
-.sidebar--title {
-  display: flex;
+.sidebar--head {
   height: 68px;
   background-color: #222;
+  text-align: center;
 }
 
-.sidebar--title p {
+.sidebar--head span{
   margin: auto;
-  text-align: center;
   font-size: 2rem;
   color: white;
 }

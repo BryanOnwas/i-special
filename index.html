@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link href="styles/hamburgers.css" rel="stylesheet" />
+    <link href="styles/toggle-switch.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -23,14 +24,14 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
-          I-Special
+          <span>I-Special</span>
         </div>
         <div class="top--search">
           <input type="text" maxlength="40" placeholder="Search" />
           <button type="submit"><i class="icon fa fa-search"></i></button>
         </div>
         <div class="top--login">
-          <a href="#">Create Account</a> <a href="#">Login</a>
+          <a href="#">New Account</a> <a href="#">Login</a>
         </div>
       </div>
 
@@ -42,7 +43,6 @@
             <li><a href="#">Pants?</a></li>
             <li><a href="#">Underwear?</a></li>
             <li><a href="#">Shoes?</a></li>
-            <li><a href="#">...Other stuff?</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +56,15 @@
     </main>
 
     <aside class="sidebar">
-      <div class="sidebar--title"><p>I-Special</p></div>
+      <div class="sidebar--head">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <span>I-Special</span>
+      </div>
+      <div class="sidebar--body"></div>
     </aside>
 
     <footer>
