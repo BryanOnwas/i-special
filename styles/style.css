@@ -229,7 +229,7 @@ footer p {
   text-align: center;
 }
 
-.btn {
+.test {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -237,7 +237,7 @@ footer p {
   background-color: #222;
 }
 
-.btn a {
+.test a {
   display: block;
   font-size: 2rem;
   text-transform: uppercase;
