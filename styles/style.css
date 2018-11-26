@@ -1,14 +1,13 @@
-/* Global Selectors */
+/* Global Selectors  */
 *,
 *::before,
-*::after,
-*:active {
+*::after {
   margin: 0;
   padding: 0;
   user-select: none;
   box-sizing: border-box;
   backface-visibility: hidden;
-  outline: none;
+  outline: none; 
 }
 
 .container {
@@ -48,7 +47,7 @@ img {
   display: block;
   height: auto;
   min-width: 100%;
-}
+} */
 
 ul {
   list-style-type: none;
@@ -79,8 +78,7 @@ a {
 /* Header exclusive Selectors */
 header {
   position: fixed;
-  left: 0;
-  right: 0;
+  width: 100%;
   z-index: 10;
   opacity: 0.9;
 }
@@ -91,7 +89,6 @@ header {
   text-align: center;
   justify-content: space-between;
   height: 66px;
-
   transition: opacity 0.25s ease;
 }
 
@@ -239,6 +236,7 @@ footer p {
   z-index: 20;
   background-color: #222;
   transition: right 0.25s ease;
+  width: 100px;
 }
 
 .test a {
@@ -247,4 +245,5 @@ footer p {
   text-transform: uppercase;
   padding: 4px;
   color: white;
+  text-align: center;
 }
