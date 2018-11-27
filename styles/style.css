@@ -205,8 +205,11 @@ header {
   transition: left 250ms ease;
 }
 
+.sidebar li{
+  display: block;
+}
+
 .sidebar--head {
-  height: 68px;
   background-color: #222;
   text-align: center;
 }
@@ -215,6 +218,18 @@ header {
   margin: auto;
   font-size: 2rem;
   color: white;
+}
+
+.sidebar--body {
+  text-align: center;
+}
+
+.sidebar--body--title{
+  font-size: 1.5rem;
+
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
 footer {
