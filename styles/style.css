@@ -7,7 +7,7 @@
   user-select: none;
   box-sizing: border-box;
   backface-visibility: hidden;
-  outline: none; 
+  outline: none;
 }
 
 .container {
@@ -47,8 +47,7 @@ img {
   display: block;
   height: auto;
   min-width: 100%;
-} */
-
+}
 ul {
   list-style-type: none;
   font-size: 0;
@@ -81,6 +80,7 @@ header {
   width: 100%;
   z-index: 10;
   opacity: 0.9;
+  transition: opacity 0.25s ease;
 }
 
 .top {
@@ -89,7 +89,6 @@ header {
   text-align: center;
   justify-content: space-between;
   height: 66px;
-  transition: opacity 0.25s ease;
 }
 
 .top__light {
@@ -106,6 +105,7 @@ header {
   flex-basis: 300px;
   border-right: 1px solid;
   background-color: #ddd;
+  line-height: 66px;
 }
 
 .top--search {
@@ -205,7 +205,7 @@ header {
   transition: left 250ms ease;
 }
 
-.sidebar li{
+.sidebar li {
   display: block;
 }
 
@@ -224,7 +224,7 @@ header {
   text-align: center;
 }
 
-.sidebar--body--title{
+.sidebar--body--title {
   font-size: 1.5rem;
 
   color: white;

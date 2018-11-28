@@ -110,4 +110,3 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
   // Invoke scroll and sequential requestAnimationFrame
   scroll();
 }
-
